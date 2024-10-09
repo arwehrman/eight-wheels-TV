@@ -12,11 +12,11 @@
     "autoPageFocusRestore": true
   },
   "platformSettings": {
-    "log": true,
+    "log": false,
     "path": "./static",
     "disableTransitions": false,
-    "showVersion": true,
-    "inspector": false,
+    "showVersion": false,
+    "inspector": true,
     "router": {
       "backtrack": false,
       "gcOnUnload": true,

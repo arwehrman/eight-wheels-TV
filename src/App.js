@@ -1,6 +1,7 @@
 import { Router, Utils } from '@lightningjs/sdk'
 import routes from './lib/routes'
 import { Menu } from './widgets'
+
 export default class App extends Router.App {
   static getFonts() {
     return [

@@ -1,4 +1,6 @@
 import { Lightning, Router, Utils } from '@lightningjs/sdk'
+import { FocusManager } from '@lightningjs/ui-components'
+import ItemsRow from '../components/ItemsRow'
 
 export default class Dance extends Lightning.Component {
   static _template() {
@@ -6,11 +8,11 @@ export default class Dance extends Lightning.Component {
       rect: true,
       w: 1920,
       h: 1080,
-      color: 0xffbab700,
+      color: 0xffff579f,
       Header: {
         mount: 0.5,
-        x: 960,
-        y: 540,
+        x: 800,
+        y: 140,
         text: {
           text: 'Dance Page',
           fontFace: 'Bold',
@@ -27,19 +29,33 @@ export default class Dance extends Lightning.Component {
             flexItem: { marginRight: 20, marginLeft: 50 },
             rotation: Math.PI * 1.5,
             src: Utils.asset('images/arrow.png')
-          },
-          Label: {
-            mountY: 0.5,
-            y: 24,
-            text: {
-              text: 'Menu Widget',
-              fontFace: 'Regular',
-              textAlign: 'right',
-              wordWrapWidth: 300,
-              lineHeight: 48
-            }
           }
         }
+      },
+      SectionsContainter: {
+        type: FocusManager,
+        direction: 'row',
+        wrapSelected: false,
+        items: [
+          {
+            ref: 'ItemsRow',
+            type: ItemsRow,
+            w: 600,
+            h: 200,
+            y: 0
+          },
+          {
+            ref: 'ItemsRow',
+            type: ItemsRow,
+            w: 600,
+            h: 200,
+            y: 300
+          }
+        ],
+        w: 700,
+        h: 800,
+        y: 300,
+        x: 200
       }
     }
   }

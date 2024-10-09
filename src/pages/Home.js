@@ -1,5 +1,5 @@
 import { Lightning, Router, Utils } from '@lightningjs/sdk'
-
+import { TitleRow } from '@lightningjs/ui-components'
 export default class Home extends Lightning.Component {
   static _template() {
     return {
@@ -9,7 +9,7 @@ export default class Home extends Lightning.Component {
       color: 0xffbbdfc5,
       Header: {
         mount: 0.5,
-        x: 960,
+        x: 200,
         y: 540,
         text: {
           text: 'Home Page',

@@ -2,6 +2,9 @@
   "name": "com.domain.app.EightWheelsTV",
   "description": "Eight Wheels TV",
   "dependencies": {
-    "@lightningjs/sdk": "^5.5.4"
+    "@lightningjs/core": "^2.14.0",
+    "@lightningjs/sdk": "^5.5.4",
+    "@lightningjs/ui": "^1.3.19",
+    "@lightningjs/ui-components": "^2.23.2"
   }
 }
