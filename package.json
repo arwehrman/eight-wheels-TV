@@ -1,0 +1,7 @@
+{
+  "name": "com.domain.app.EightWheelsTV",
+  "description": "Eight Wheels TV",
+  "dependencies": {
+    "@lightningjs/sdk": "^5.5.4"
+  }
+}

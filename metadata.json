@@ -1,0 +1,6 @@
+{
+  "name": "Eight Wheels TV",
+  "identifier": "com.domain.app.EightWheelsTV",
+  "version": "1.0.0",
+  "icon": "./static/icon.png"
+}
